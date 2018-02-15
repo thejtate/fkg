@@ -1,0 +1,9 @@
+.outer-wrapper {
+  position: relative;
+  margin-top: 0;
+  @include transition(all .3s);
+}
+
+.content-wrapper {
+
+}

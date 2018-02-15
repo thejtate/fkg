@@ -1,0 +1,109 @@
+.site-header {
+  border-top: 10px solid #9c9583;
+
+  .site-container {
+    height: 120px;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 50%;
+    @include transform(translateY(-50%));
+    width: 60px;
+    height: 44px;
+    @include text-hide();
+
+    &.active {
+
+      &:before {
+        @include transform(rotate(45deg));
+        top: 18px;
+      }
+
+      &:after {
+        @include transform(rotate(-45deg));
+        bottom: 18px
+      }
+
+      span {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &:before {
+      @include pseudo-block($top: 0, $left: 0);
+      height: 7px;
+      width: 60px;
+      @include border-radius(10px);
+      background: #fff;
+      @include transition(all .3s);
+    }
+
+    &:after {
+      @include pseudo-block($bottom: 0, $left: 0);
+      height: 7px;
+      width: 60px;
+      @include border-radius(10px);
+      background: #fff;
+      @include transition(all .3s);
+    }
+
+    span {
+      display: block;
+      height: 7px;
+      background: #fff;
+      @include border-radius(10px);
+      position: absolute;
+      top: 50%;
+      @include transform(translateY(-50%));
+      left: 0;
+      right: 0;
+      opacity: 1;
+      visibility: visible;
+      @include transition(all .3s);
+    }
+  }
+
+  .nav {
+    bottom: 100%;
+    right: 0;
+    font-size: 19px;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all .3s);
+    width: 100%;
+    padding-bottom: 10px;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .menu {
+      background: #111111;
+
+      li {
+        display: block;
+        margin: 0;
+        min-height: 50px;
+
+        &.active, &:hover {
+          background: #9c9583;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+
+      a {
+        color: #b3b3b3;
+        padding: 10px 35px;
+        text-align: center;
+      }
+    }
+  }
+}

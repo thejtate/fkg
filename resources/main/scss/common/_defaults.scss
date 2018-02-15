@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  height: 100%;
+  font-size: 15px;
+  font-family: $merriweather-regular;
+  color: #404040;
+  overflow-x: hidden;
+}
+
+*, :after, :before {
+  @include box-sizing(border-box);
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: normal;
+}
+
+strong {
+  font-family: $merriweather-bold;
+}
+
+img {
+  vertical-align: top;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #b39336;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

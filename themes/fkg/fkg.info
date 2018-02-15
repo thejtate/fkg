@@ -1,0 +1,25 @@
+name = FKG theme
+description = FKG theme
+core = 7.x
+version = 1.x-dev
+project = FKG
+
+regions[header] = Header
+regions[header_bottom] = Header Bottom
+regions[caption] = Page Caption
+regions[page_top] = Page Top
+regions[content] = Content
+regions[page_bottom] = Page Bottom
+regions[sidebar_first]  = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[footer] = Footer
+regions[highlighted] = Highlighted
+regions[help] = Help
+
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/custom.css
+
+scripts[] = js/lib/cherry.parallax.js
+scripts[] = js/lib/jquery.columnizer.js
+scripts[] = js/lib/device.min.js
+scripts[] = js/js.js

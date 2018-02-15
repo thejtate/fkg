@@ -1,0 +1,40 @@
+.section-top {
+
+  .site-container {
+    min-height: 375px;
+  }
+
+  h1 {
+    font-size: 42px;
+    right: 15px;
+  }
+
+  .page-home & {
+
+    h1 {
+      bottom: 86px;
+    }
+  }
+
+  .page-client & {
+
+    h1 {
+      bottom: 45px;
+    }
+  }
+
+  .page-contacts & {
+
+    h1 {
+      bottom: 45px;
+    }
+  }
+
+  .page-blog & {
+
+    h1 {
+      width: 810px;
+      bottom: 83px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.section-clients {
+  padding-bottom: 28px;
+
+
+  h2 {
+    margin: 0 0 37px 0;
+  }
+
+  .item {
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 41px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:hover {
+
+      &:before {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .text {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .text {
+    top: 90px;
+    padding: 0 40px;
+  }
+
+
+  h4 {
+    margin: 0 0 15px 0;
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,26 @@
+&.section-list {
+  background: #d9d9d9;
+  padding: 20px 0 40px;
+
+  .column {
+    padding-right: 30px;
+
+    &:nth-child(3) {
+      padding-right: 0;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin-bottom: 17px;
+
+      a {
+        display: block;
+      }
+    }
+  }
+}

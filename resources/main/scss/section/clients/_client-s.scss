@@ -1,0 +1,36 @@
+.section-clients {
+  padding-bottom: 28px;
+
+  h2 {
+    margin: 0 0 37px 0;
+  }
+
+  .item {
+    display: block;
+    max-width: 340px;
+    margin: 0 auto 20px auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .text {
+    top: 0;
+    bottom: 0;
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+    }
+  }
+
+  h4 {
+    margin: 0 0 15px 0;
+    font-size: 32px;
+  }
+}

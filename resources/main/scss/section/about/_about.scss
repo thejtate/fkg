@@ -1,0 +1,28 @@
+&.section-about {
+  background-color: #9c9583;
+  overflow: hidden;
+
+  .parallax-box {
+    position: static;
+  }
+
+  .parallax-content {
+    z-index: 2;
+    position: relative;
+  }
+
+  h2 {
+    background: image-url('bg/h2-about-bg.jpg');
+    z-index: 5;
+    position: relative;
+    margin: 10px 0 30px 0;
+  }
+
+  .desc {
+    z-index: 2;
+  }
+
+  strong {
+    font-family: $merriweather-bold;
+  }
+}

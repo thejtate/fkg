@@ -1,0 +1,16 @@
+.content-wrapper {
+
+  .tabs {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+  }
+
+  .desc .item:nth-child(3n+2){
+    @include transition-delay(.3s);
+  }
+
+  .desc .item:nth-child(3n+3){
+    @include transition-delay(.6s);
+  }
+}

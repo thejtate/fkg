@@ -1,0 +1,52 @@
+<?php
+/**
+ * @file
+ * Custom site functionality
+ */
+
+
+module_load_include('inc', 'fkg_custom', 'includes/fkg_custom.form');
+
+/**
+ * Implements hook_menu().
+ */
+function fkg_custom_menu() {
+  $items['admin/fkg/config'] = array(
+    'title' => 'FKG Configuration',
+    'description' => 'FKG Configuration page',
+    'type' => MENU_NORMAL_ITEM,
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('fkg_custom_site_setings_form'),
+    'access arguments' => array('administer content site configuration'),
+  );
+  return $items;
+}
+
+
+/**
+ * Implements hook_permission().
+ */
+function fkg_custom_permission() {
+  return array(
+    'administer content site configuration' => array(
+      'title' => t('Administer main content variables'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu_alter().
+ */
+function fkg_custom_menu_alter(&$items) {
+  global $user;
+
+  $items['user/register']['access callback'] = FALSE;
+  $items['user/password']['access callback'] = FALSE;
+  $items['user/reset/%/%/%']['access callback'] = FALSE;
+
+  if ($user->uid != 1) {
+    $item['node/%node/webform-results/analysis']['access callback'] = FALSE;
+    $item['node/%node/webform-results/download']['access callback'] = FALSE;
+    $item['node/%node/webform']['access callback'] = FALSE;
+  }
+}

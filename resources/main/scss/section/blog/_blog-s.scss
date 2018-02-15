@@ -1,0 +1,57 @@
+
+.section-cols {
+  font-size: 13px;
+
+  .back-btn {
+    margin-top: 80px;
+  }
+
+  h2 {
+    margin: 0 0 24px 0;
+  }
+
+  .left-part {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+
+  .posts {
+    margin-bottom: 25px;
+  }
+
+  .post {
+    padding: 10px 35px 10px 15px;
+    margin-bottom: 4px;
+
+    h5 {
+      font-size: 18px;
+      margin: 6px 0 20px 0;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .node-readmore a {
+      width: 100%;
+      background: none !important;
+
+      &:after{
+        @include pseudo-block($right:0, $top:0, $bottom:0);
+        width: 25px;
+        background: #d4cebe;
+      }
+
+      &:before {
+        @include pseudo-block($top: 50%, $right: 3px);
+        @include transform(translateY(-50%));
+        z-index: 3;
+      }
+    }
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

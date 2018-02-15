@@ -1,0 +1,27 @@
+body .main-holder {
+  overflow: hidden;
+  position: static;
+}
+.parallax-box {
+  position: relative;
+  height: 100%;
+}
+
+.parallax-content {
+  z-index: 2;
+  height: 100%;
+}
+.parallax-bg {
+  overflow:hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+}
+.parallax-bg-inner {
+  position:relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width:none;
+}

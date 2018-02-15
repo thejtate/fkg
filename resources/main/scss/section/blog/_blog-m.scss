@@ -1,0 +1,56 @@
+
+.section-cols {
+  font-size: 16px;
+
+  .back-btn {
+    margin-top: 60px;
+  }
+
+  h2 {
+    margin: 0 0 24px 0;
+  }
+
+  .left-part {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+  }
+
+  .posts {
+    margin-bottom: 25px;
+  }
+
+  .post {
+    padding: 20px 90px 20px 30px;
+    margin-bottom: 4px;
+
+    h5 {
+      font-size: 28px;
+      margin: 6px 0 20px 0;
+    }
+
+    p {
+      line-height: 1.9;
+    }
+
+    .node-readmore a {
+      width: 40px;
+
+      &:before {
+        @include pseudo-block($top: 50%, $left: 50%);
+        @include transform(translate(-50%, -50%));
+      }
+
+      &:hover {
+
+        &:before {
+          @include transform(scale(1.2) translate(-50%, -50%));
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+.section-list {
+
+  .column {
+    padding-right: 0;
+    display: block;
+    float: none !important;
+    width: 100% !important;
+    text-align: center;
+
+    &:nth-child(3) {
+      padding-right: 0;
+    }
+  }
+}

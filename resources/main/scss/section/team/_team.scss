@@ -1,0 +1,129 @@
+&.section-teams {
+  background: #bfbbb2;
+  position: relative;
+  @include transition(all .4s);
+
+  &.active {
+    background: #d9d9d9;
+  }
+
+  h2 {
+    background: image-url('bg/h2-team-bg.jpg');
+  }
+
+  .desc {
+    text-align: center;
+  }
+
+  .item {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+
+    &:hover .node-team-member > a {
+
+      &:before, &:after {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .text {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    img {
+      display: block;
+    }
+
+    .node-team-member {
+
+      & > a {
+
+        &:after, &:before {
+          @include transition(all .4s);
+        }
+
+        &:before {
+          @include pseudo-block($top: 0, $left: 0, $right: 0, $bottom: 0);
+          background: rgba(51, 51, 51, 0.85);
+          box-shadow: inset 0 0 0 20px #9c9583;
+        }
+      }
+    }
+  }
+
+  .text {
+    @include transition(all .4s);
+  }
+
+  h4 {
+    color: #e6e6e6;
+  }
+
+  span {
+    display: block;
+    color: #9c9583;
+    font-size: 17px;
+    font-family: $firasans-bold;
+    text-transform: uppercase;
+  }
+
+  .popup-items {
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+  }
+
+  article {
+    position: absolute;
+    background: #fff;
+    top: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all .4s);
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .function {
+      font-family: $firasans-bold;
+      color: #404040;
+    }
+
+    h2 {
+      position: absolute;
+      left: 50%;
+      @include transform(translateX(-50%));
+    }
+
+    .close {
+      position: absolute;
+      display: block;
+      @include text-hide();
+      @include oneline-sprite-box($icons, close);
+    }
+
+    .desc-item {
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.7;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

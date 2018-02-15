@@ -1,0 +1,60 @@
+.site-footer {
+  background-color: #333;
+  background-image: image-url('bg/footer-bottom-bg.png');
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  font-size: 17px;
+  font-family: $firasans-medium;
+  text-transform: uppercase;
+
+  .site-container {
+    height: 190px;
+    color: #666666;
+    position: relative;
+  }
+
+  a {
+    color: #666666;
+  }
+
+  .nav {
+    position: absolute;
+    top: 53px;
+    right: 0
+  }
+
+  .left-part {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    span {
+      display: block;
+      margin-bottom: 7px;
+    }
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    line-height: 1;
+
+    li {
+      display: inline-block;
+      border-right: 2px solid #000;
+      padding-right: 14px;
+      margin: 0 14px 0 0;
+
+      &:last-child {
+        border-right: 0;
+        margin: 0;
+        padding-right: 0;
+      }
+
+      a {
+        display: block;
+      }
+    }
+  }
+}

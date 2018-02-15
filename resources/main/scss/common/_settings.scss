@@ -1,0 +1,21 @@
+$icons: sprite-map('icons/*.png', $spacing: 8px, $layout: 'smart');
+//$h-sprites: sprite-map('h-sprites/*.png',$layout: 'vertical', $spacing: 8px);
+//$v-sprites: sprite-map('v-sprites/*.png', $layout: 'horizontal', $spacing: 8px);
+
+$experimental-support-for-svg: true;
+$experimental-support-for-opera: false;
+
+//width
+$width-m :768px;
+$width-l :1170px;
+
+//fonts
+$firasans-bold: firasans-bold;
+$firasans-regular: firasans-light;
+$firasans-medium: firasans-medium;
+$firasans-italic: firasans-italic;
+$firasans-light: firasans-light;
+$merriweather-regular: merriweather-light;
+$merriweather-bold: merriweather-bold;
+$merriweather-light: merriweather-light;
+$firasans-mediumitalic: firasans-mediumitalic;

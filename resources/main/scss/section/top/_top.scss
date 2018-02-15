@@ -1,0 +1,31 @@
+&.section-top {
+  text-align: right;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  position: relative;
+
+  h1 {
+    color: #fff;
+    position: absolute;
+    margin: 0;
+    font-family: $merriweather-light;
+  }
+
+  .page-home & {
+    background-image: image-url('bg/section-top-home.jpg');
+  }
+
+  .page-client & {
+    background-image: image-url('bg/section-top-client.jpg');
+  }
+
+  .page-contacts & {
+    background-image: image-url('bg/section-top-contacts.jpg');
+  }
+
+  .page-blog & {
+    background-image: image-url('bg/section-top-blog.jpg');
+  }
+}

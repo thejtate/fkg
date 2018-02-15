@@ -1,0 +1,99 @@
+@import "compass";
+//base styles
+@import "common/mixins";
+@import "common/fonts";
+@import "common/settings";
+@import "common/normalize";
+@import "common/helpers";
+@import "common/defaults";
+//forms
+@import "forms/forms";
+//layout
+@import "layout/header/header";
+@import "layout/wrapper/wrappers";
+@import "layout/content";
+@import "layout/footer/footer";
+@import "layout/site-container/site-container";
+//blocks
+@import "blocks/sidebar";
+//pages
+@import "pages/user";
+@import "pages/blog";
+//modules
+@import "modules/parralax/parralax";
+//section
+@import "section/section/section";
+
+@media (max-width: $width-m - 1) {
+  @import "layout/header/header-s";
+  @import "layout/site-container/site-container-m";
+  @import "layout/footer/footer-s";
+
+  @import "section/about/about-s";
+  @import "section/services/services-s";
+  @import "section/top/top-s";
+  @import "section/section/section-s";
+  @import "section/team/team-s";
+  @import "section/bottom/bottom-s";
+  @import "section/clients/client-s";
+  @import "section/contcats/contacts-s";
+  @import "section/blog/blog-s";
+  @import "section/list/list-m";
+
+  //blocks
+  @import "blocks/pager/pager-s";
+
+  //modules
+  @import "modules/parralax/parralax-s";
+
+}
+
+@media (min-width: $width-m) and (max-width: $width-l - 1) {
+  @import "layout/header/header-m";
+  @import "layout/site-container/site-container-m";
+  @import "layout/footer/footer-m";
+
+  //sections
+  @import "section/services/services-m";
+  @import "section/team/team-m";
+  @import "section/about/about-l";
+  @import "section/bottom/bottom-m";
+  @import "section/top/top-m";
+  @import "section/section/section-l";
+  @import "section/clients/client-m";
+  @import "section/contcats/contacts-m";
+  @import "section/blog/blog-m";
+  @import "section/list/list-m";
+
+  //blocks
+  @import "blocks/pager/pager";
+
+  //modules
+  @import "modules/parralax/parralax-m";
+
+}
+
+@media (min-width: $width-l) {
+  @import "layout/header/header-l";
+  @import "layout/footer/footer-l";
+  @import "layout/site-container/site-container-l";
+  @import "layout/wrapper/wrappers-l";
+
+  @import "section/services/services-l";
+  @import "section/team/team-l";
+  @import "section/about/about-l";
+  @import "section/bottom/bottom-l";
+  @import "section/top/top-l";
+  @import "section/section/section-l";
+  @import "section/clients/client-l";
+  @import "section/contcats/contacts-l";
+  @import "section/blog/blog-l";
+
+  //blocks
+  @import "blocks/pager/pager";
+
+  //modules
+  @import "modules/el-with-animation";
+  @import "modules/parralax/parralax-l";
+
+}

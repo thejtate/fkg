@@ -1,0 +1,100 @@
+.section-teams {
+  padding-bottom: 66px;
+
+  &.active {
+    background: #d9d9d9;
+  }
+
+  h2 {
+    margin: 0 0 57px 0;
+  }
+
+  .item {
+    margin-right: 5%;
+    margin-bottom: 25px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    .node-team-member {
+
+      & > a {
+
+        &:after, &:before {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        &:after {
+          @include pseudo-block($left: 50%, $bottom: 60px);
+          @include transform(translateX(-50%));
+          @include oneline-sprite-box($icons, arr-team);
+        }
+      }
+    }
+  }
+
+  .text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    padding: 0 40px;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all .4s);
+  }
+
+  h4 {
+    color: #e6e6e6;
+    font-size: 32px;
+    margin: 0 0 15px 0;
+  }
+
+  span {
+    display: block;
+    color: #9c9583;
+    font-size: 17px;
+    font-family: $firasans-bold;
+    text-transform: uppercase;
+  }
+
+  article {
+    left: 20px;
+    right: 20px;
+    top: -12px;
+
+
+    .desc {
+
+    }
+
+    .function {
+      font-size: 17px;
+    }
+
+    h2 {
+      padding: 20px 50px;
+      max-width: 410px;
+    }
+
+    .img {
+      display: none;
+    }
+
+    .close {
+      right: 18px;
+      top: 18px;
+    }
+
+    .desc-item {
+      width: 650px;
+      padding-top: 160px;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

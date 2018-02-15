@@ -1,0 +1,66 @@
+.site-header {
+  background-image: image-url('bg/header-bg.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    img {
+      @include transition(all .3s);
+    }
+
+    &:hover a img {
+      opacity: .7;
+    }
+
+    a {
+      padding: 30px 48px;
+      background: #fff;
+    }
+
+    a, img {
+      display: block;
+    }
+  }
+
+  .nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: $firasans-light;
+    text-transform: uppercase;
+
+    .menu {
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        @include transition(all .3s);
+
+        &.active, &:hover {
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+
+      a {
+        color: #b3b3b3;
+        padding: 0 13px 14px 13px;
+        display: block;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

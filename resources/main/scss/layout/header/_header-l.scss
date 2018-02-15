@@ -1,0 +1,34 @@
+.site-header {
+  border-top: 10px solid #9c9583;
+
+  .site-container {
+    height: 120px;
+  }
+
+  .nav {
+    right: 0;
+    bottom: 0;
+    font-size: 19px;
+
+    .menu {
+
+      li {
+        display: inline-block;
+        border-bottom: 10px solid transparent;
+
+        &.active, &:hover {
+          border-bottom: 10px solid #9c9583;
+
+          a{
+            color: #fff;
+          }
+        }
+      }
+
+      a {
+        color: #b3b3b3;
+        padding: 0 13px 14px 13px;
+      }
+    }
+  }
+}

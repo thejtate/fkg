@@ -1,0 +1,27 @@
+.site-footer {
+  font-size: 17px;
+
+  .site-container {
+    height: 190px;
+  }
+
+  .nav {
+    position: absolute;
+    top: 53px;
+    right: 0
+  }
+
+  .left-part {
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  ul {
+
+    li {
+      padding-right: 14px;
+      margin: 0 14px 0 0;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.section-bottom {
+  padding: 45px 0 49px 0;
+
+  h3 {
+    margin: 0 0 30px 0;
+    font-size: 30px;
+    padding-left: 60px;
+  }
+
+  .site-container {
+    text-align: center;
+  }
+
+  .listen {
+    width: 100%;
+    text-align: left;
+
+    h3:before {
+      @include pseudo-block($left: 0, $top: 50%);
+      @include oneline-sprite-box($icons, icon-listen);
+      @include transform(translateY(-50%));
+    }
+
+    p {
+      margin: 0 0 24px 0;
+      line-height: 1.9;
+    }
+
+    .links {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: 20px;
+
+        a {
+          display: inline-block;
+          width: 230px;
+          padding: 7px 25px 6px 25px;
+          font-family: $firasans-bold;
+          font-size: 15px;
+          color: #a6a6a6;
+          background: #5c5c5c;
+          position: relative;
+          @include transition(all .3s);
+
+          &:before {
+            @include pseudo-block($top: 0, $right: 0);
+            @include oneline-sprite-box($icons, arr-listen);
+          }
+
+          &:hover {
+            text-decoration: none;
+            opacity: .7;
+          }
+        }
+      }
+    }
+  }
+
+  .helpful {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+
+    h3:before {
+      @include pseudo-block($left: 0, $top: 50%);
+      @include oneline-sprite-box($icons, icon-helpful);
+      @include transform(translateY(-50%));
+    }
+
+    .division {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        position: relative;
+        padding: 8px 0 8px 20px;
+        border-bottom: 2px solid #8a8a8a;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

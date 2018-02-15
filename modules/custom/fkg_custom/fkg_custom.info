@@ -1,0 +1,4 @@
+name = FKG custom module
+description = Implements FKG custom functionality.
+core = 7.x
+package = custom

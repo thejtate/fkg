@@ -1,0 +1,57 @@
+.content-wrapper > .tabs .tabs.primary {
+  /*margin-top: 152px;*/
+}
+
+/* Clients */
+.page-client .field-collection-view {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+}
+
+.page-client .field-collection-view .entity-field-collection-item {
+   float: none;
+}
+
+.page-client .field-collection-view ul.field-collection-view-links{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+.page-client ul.field-collection-view-links li a {
+  /*color: #333;*/
+  border-style: solid solid solid;
+  background-color: #DDD;
+  border-color: #BBB;
+  border-width: 1px;
+  height: auto;
+  display: block;
+  text-decoration: none;
+  padding: 2px 5px;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-right: 0;
+}
+
+.page-client ul.field-collection-view-links li {
+  float: left;
+  margin-left: 5px;
+}
+
+.page-client .action-links-field-collection-add li {
+  list-style: none;
+}
+
+.page-client .action-links-field-collection-add li a {
+  /*color: #333;*/
+  border-style: solid solid solid;
+  background-color: #DDD;
+  border-color: #BBB;
+  border-width: 1px;
+  height: auto;
+  margin-right: 0.5em;
+  padding: 5px 10px;
+  text-decoration: none;
+}

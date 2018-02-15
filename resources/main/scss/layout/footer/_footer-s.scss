@@ -1,0 +1,28 @@
+.site-footer {
+  font-size: 14px;
+  text-align: center;
+
+  .site-container {
+    height: 190px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .left-part {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+  }
+
+  ul {
+    text-align: center;
+
+    li {
+      padding-right: 5px;
+      margin: 0 5px 0 0;
+    }
+  }
+}

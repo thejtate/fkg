@@ -1,0 +1,37 @@
+&.b-pager {
+  margin: 0 0 45px 0;
+  padding: 0;
+  font-family: $firasans-regular;
+  font-size: 20px;
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+
+    a {
+      display: block;
+      color: #e5e5e5;
+      padding: 5px 15px;
+      background: #999999;
+      width: 40px;
+      height: 40px;
+    }
+
+    &.first a{
+      @include oneline-sprite-box($icons, pager-first)
+    }
+
+    &.prev a{
+      @include oneline-sprite-box($icons, pager-prev)
+    }
+
+    &.next a{
+      @include oneline-sprite-box($icons, pager-next)
+    }
+
+    &.last a{
+      @include oneline-sprite-box($icons, pager-last)
+    }
+  }
+
+}
